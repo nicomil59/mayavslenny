@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 425px;
+    margin: 0 auto;
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #ffc0cc;
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 2px;
+    background-color: #555;
+    border-radius: 25px;
+    font-size: 22px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 90%;
+}
+
+.courses {
+    background-color: #fff;
+    width: 90%;
+    height: 80vh;
+    margin: 15px auto 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.maya, .opponent {
+    width: 47%;
+    height: 100%;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.maya {
+    background-color: #ffc0cb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.opponent {
+    background-color: #ffd4c0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc {
+    width: 33%;
+    height: 10%;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.bloc.end, .bloc.start {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.start {
+    border: 2px solid #fff;
+    font-size: 2rem;
+}
+.end {
+    border: 2px dotted #99737a;
+    letter-spacing: 1.25px;
+    color: #000;
+}
+
+.filled, .filled-oppo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filled {
+    background-image: url('./images/maya.jpg');
+    
+}
+.filled-oppo {
+    background-image: url('./images/lenny.jpg');
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display:block;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.button:active {
+	transform: scale(0.90);
+}
+
+.button:hover {
+    background-color: #EEE7FF;
+    color: #3b2eff;
+}
+
+.button.reload {
+    display: none;
+}
+
+.resultat-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    height: 100vh;
+}
+
+.resultat {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    text-align: center;
+    color: #8c6a70;
+    padding: 10px;
+    width: 85%;
+    background-color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.message {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 440px) {
+    .resultat {
+        width: 300px;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+}
+
+
